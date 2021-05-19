@@ -1,3 +1,6 @@
+#Simulação de uma viagem de avião, calculando quantidade de lugares ocupados e vazios, percentual
+#de ocupação, total de passagens vendidas e pergunta se o cliente deseja comprar um lugar
+
 vtLinhas = []
 
 def Insere():

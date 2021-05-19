@@ -1,3 +1,5 @@
+#Primeiro exemplo de manipulação de arquivos
+
 vetor=['Linha01\n', 'Linha02\n', 'Linha03\n']
 
 def criaarquivo():

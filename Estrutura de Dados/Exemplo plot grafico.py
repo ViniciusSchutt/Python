@@ -1,7 +1,9 @@
+#Primeiro exemplo de como plotar gráficos no Python
+
 import pandas as pd
 import matplotlib.pyplot as plt
 
-dataFrame = pd.read_csv("C:\\Users\\vinic\Downloads\\arqExcel.csv", delimiter=";")
+dataFrame = pd.read_csv("C:\\Users\\etc.", delimiter=";")
 
 #print(dataFrame)
 

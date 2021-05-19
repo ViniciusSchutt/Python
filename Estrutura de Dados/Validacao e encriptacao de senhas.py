@@ -6,7 +6,7 @@ numeros = '0123456789'
 numeros.split(' ')
 senha = str(input("Digite uma senha com no mínimo 25 e no máximo 30 chars: "))
 senha.split(' ')
-senhacifrada=[]
+senhacifrada = []
 
 def validacao():
     quaosegura = len(senha)
@@ -31,7 +31,7 @@ def validacao():
 
     j = 6
     teste2 = 0
-    for j in range (11):
+    for j in range(11):
         if str.islower(senha[j]):
             teste2 = teste2 + 1
         else:

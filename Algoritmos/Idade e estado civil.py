@@ -1,9 +1,12 @@
-#crie um algoritmo que receba a idade e o estado civil de acordo com os códigos: 1 = casado |2 = solteiro |3 = Viúvo |4 = Divorciado
-#calcule e imprima:
-#A quantidade de pessoas casadas
-#A quantidade de pessoas solteiras
-#A média das idades das pessoas viúvas
-#A porcentagem de pessoas divorciadas
+"""
+Crie um algoritmo que receba a idade e o estado civil de acordo
+com os códigos: 1 = casado |2 = solteiro |3 = Viúvo |4 = Divorciado
+calcule e imprima:
+A quantidade de pessoas casadas
+A quantidade de pessoas solteiras
+A média das idades das pessoas viúvas
+A porcentagem de pessoas divorciadas
+"""
 
 qntcasados = 0 #quantidade de casados
 qntsolteiros = 0 #quantidade de solteiros

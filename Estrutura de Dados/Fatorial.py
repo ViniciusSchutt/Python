@@ -1,3 +1,4 @@
+#Calculo do fatorial de um número
 def loop(n):
     fat = 1
     i = 2

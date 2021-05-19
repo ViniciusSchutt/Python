@@ -1,3 +1,5 @@
+#Programa que realiza a conjugação de verbos
+
 print("Informe um verbo qualquer: ")
 verbo = list(input())
 
