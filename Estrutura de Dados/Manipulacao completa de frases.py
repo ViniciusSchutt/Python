@@ -1,23 +1,29 @@
+"""
+O programa recebe uma frase qualquer e retorna vários dados a respeito dela,
+como a quantidade de letras da frase, o número de vogais e consoantes, a quantidade
+de palavras da frase, a quantidade de vogais que se repetem e a frase em forma
+cifrada.
+"""
 print("Informe uma frase qualquer: ")
 nome = str(input())
 
 def funcoesSimples():
      print("A frase informada foi:", nome)
-     qtdchar = len(nome)
+     qtdchar = len(nome) #quantidade de caracteres
 
      frase = nome
      frase.split(" ")
-     qtdpalavras = 1
-     nespacos = 0
+     qtdpalavras = 1 #quantidade de palavras
+     nespacos = 0 #numero de espaços
      for i in range(len(nome)):
         if frase[i].isspace():
             qtdpalavras = qtdpalavras + 1
             nespacos = nespacos + 1
 
      qtdchar = qtdchar - nespacos
-     nvogais = 0
-     nconsoantes = 0
-     qta, qte, qti, qto, qtu = 0, 0, 0, 0, 0
+     nvogais = 0 #número de vogais
+     nconsoantes = 0 #número de consoantes
+     qta, qte, qti, qto, qtu = 0, 0, 0, 0, 0 #qts são variáveis para armazenar a quantidade de vogais
 
      alphabet = 'abcdefghijklmnopqrstuvwxyz'
      alphabet.split(" ")
@@ -36,7 +42,7 @@ def funcoesSimples():
          elif nome[i] == 'b' or nome[i] == 'c' or nome[i] == 'd' or nome[i] == 'f':
              letra = nome[i]
              if letra in alphabet:
-                 pos = alphabet.index(letra)
+                 pos = alphabet.index(letra) #pos se refere ao índice da letra no alfabeto
                  frasecifrada.append(alphabet[pos - 6 + 26])
          else:
              letra = nome[i]

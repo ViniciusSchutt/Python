@@ -1,3 +1,5 @@
+#Calculo do maior divisor comum entre dois números
+
 def mdc(a, b):
     if b == 0:
         return a

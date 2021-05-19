@@ -1,3 +1,4 @@
+#Ver forma completa no arquivo "Manipulacao completa de frases
 
 def funcoesSimples():
      print("Informe uma frase qualquer: ")
