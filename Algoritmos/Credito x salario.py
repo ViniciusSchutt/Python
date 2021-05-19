@@ -1,11 +1,12 @@
-#03 o banco XXX concederá um crédito especial aos seus clientes de acordo com o salário médio no último ano. Elaborar um algoritmo que leia o saldo médio do
-#cliente e calcule o valor do crédito de acordo com a tabela a seguir. Imprimir uma mensagem informando o saldo médio e o valor do crédito.
-#SALDO MEDIO           PERCENTUAL
-#de 0 a 500.00         nenhum crédito
-#de 500.01 a 1000.00   30% do valor do saldo médio
-#De 1000.01 a 3000.00  40% do valor do saldo médio
-#Acima de 3000.00      50% do valor do saldo médio
-
+"""
+03 o banco XXX concederá um crédito especial aos seus clientes de acordo com o salário médio no último ano. Elaborar um algoritmo que leia o saldo médio do
+cliente e calcule o valor do crédito de acordo com a tabela a seguir. Imprimir uma mensagem informando o saldo médio e o valor do crédito.
+SALDO MEDIO           PERCENTUAL
+de 0 a 500.00         nenhum crédito
+de 500.01 a 1000.00   30% do valor do saldo médio
+De 1000.01 a 3000.00  40% do valor do saldo médio
+Acima de 3000.00      50% do valor do saldo médio
+"""
 saldomedio=float(input("Saudações cliente, como vai? Por favor, informe seu saldo médio: "))
 
 if saldomedio > 0 and saldomedio <=500.00:

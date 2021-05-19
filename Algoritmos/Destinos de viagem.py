@@ -1,10 +1,11 @@
-#Criar um algoritmo que leia o destino do passageiro.
-#Imprimir o preço da passagem de acordo com a tabela abaixo.
-#Região norte IDA 500 IDA E VOLTA 950
-#Região nordeste IDA 350 IDA E VOLTA 650
-#Região centro-oeste IDA 300 IDA E VOLTA 550
-#Região Sul IDA 200 IDA E VOLTA 350
-
+"""
+Criar um algoritmo que leia o destino do passageiro.
+Imprimir o preço da passagem de acordo com a tabela abaixo.
+Região norte IDA 500 IDA E VOLTA 950
+Região nordeste IDA 350 IDA E VOLTA 650
+Região centro-oeste IDA 300 IDA E VOLTA 550
+Região Sul IDA 200 IDA E VOLTA 350
+"""
 regiao=str(input("Qual o destino desejado? "))
 
 if regiao=="norte" or regiao =="Norte" or regiao =="NORTE":
