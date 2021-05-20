@@ -1,10 +1,14 @@
 """
-Partindo do princípio que você receberá sempre o tamanho desse “quadrado” desenhe uma tela onde
-as bordas laterais deverão conter o símbolo do pipe “|”, as bordas superiores e inferiores deverão
-conter um traço “-“ e as diagonais da direita para a esquerda e da esquerda para a direita deverão
-conter a letra “X”, isso independentemente do tamanho do quadrado como no desenho abaixo
+Partindo do princípio que receberá sempre um tamanho “quadrado”, esse código desenha e
+printa uma tela onde as bordas laterais contém o símbolo do pipe “|”, as bordas superiores
+e inferiores, um traço "-" e as diagonais da direita para a esquerda e da esquerda para a
+direita, a letra “X”, independentemente do tamanho do quadrado, como no desenho abaixo:
 
-entrada 4 = saida ----|XX||XX|----
+entrada = 4
+        ----
+saída = |XX|
+        |XX|
+        ----
 """
 
 tam = int(input("Digite o tamanho do quadrado, o tamanho deve estar entre 3 e 40: "))
