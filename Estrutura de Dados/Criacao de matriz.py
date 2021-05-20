@@ -13,7 +13,7 @@ saída = |XX|
 
 tam = int(input("Digite o tamanho do quadrado, o tamanho deve estar entre 3 e 40: "))
 
-if 3 <= tam <= 40:
+if 3 <= tam <= 40: #se a entrada do usuário atender a requisição de tamanho entre 3 e 40, faça:
     
     lista = [None] * tam
     bordasuperior = []
@@ -22,7 +22,7 @@ if 3 <= tam <= 40:
     i = 0
     fim = len(lista) -1
 
-    def preenche():
+    def preenche(): #função que preenche a matriz
         for i in range(len(lista)):
             bordasuperior.append('-')
             bordainferior.append('-')
@@ -33,11 +33,11 @@ if 3 <= tam <= 40:
             if i != 0 and i != fim:
                 central.append('X')
 
-    def define():
+    def define(): #função que define a matriz de acordo com seu tamanho, basicamente diferenciando entre matrizes de tamanho 3 ou maiores
         if tam == 3:
-            bs=''.join(bordasuperior)
-            cent=''.join(central)
-            bi=''.join(bordainferior)
+            bs=''.join(bordasuperior) #bs é uma abreviação para Borda Superior
+            cent=''.join(central) #cent é uma abreviação para central, da linha central da matriz
+            bi=''.join(bordainferior) #bi é uma abreviação para Borda Inferior
 
             print(bs)
             print(cent)
@@ -49,12 +49,12 @@ if 3 <= tam <= 40:
             bi = ''.join(bordainferior)
             print(bs)
             for i in range(len(lista)):
-                if i != 0 and i != fim:
-                    print(cent)
+                if i != 0 and i != fim: #enquanto i não for correnpondente a primeira e última linhas da matriz
+                    print(cent) #imprima a linha central
             print(bi)
 
     preenche()
     define()
 
 else:
-    print("Tamanho inválido.")
+    print("Tamanho inválido.") #caso o tamanho informado pelo usuário não esteja no intervalo 3 <= tam <= 40, imprime "Tamanho inválido".
