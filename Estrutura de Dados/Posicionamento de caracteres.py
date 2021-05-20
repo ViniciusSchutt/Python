@@ -1,6 +1,6 @@
 tamanho = int(3)
 indice = int(1)
-palavras = [None] * 3
+palavras = [None] * 10
 
 def ordena():
 
@@ -20,7 +20,6 @@ def exibe():
     for indice in range(0, 3):
         print("O valor no indice %i" % indice, " é: %s" % palavras[indice])
 
-
 insere()
 print("Exibe vetor desordenado")
 exibe()
@@ -28,3 +27,5 @@ exibe()
 ordena()
 print("Exibe vetor ordenado")
 exibe()
+
+
