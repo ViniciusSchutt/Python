@@ -1,3 +1,4 @@
+#Programa que usa Bhaskara para fornecer as raízes da equação.
 A = float(input())
 B = float(input())
 C = float(input())
