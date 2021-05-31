@@ -1,8 +1,8 @@
-import numpy
+import numpy #So we can use the numpy functions on arrays
+#declaring the array
+array = numpy.array([[1, 2], [3, 4]])
 
-my_array = numpy.array([[1, 2], [3, 4]])
+sum = numpy.sum(array, axis=0) #making the sum
+product = numpy.prod(array, axis=None) #and the product
 
-su = numpy.sum(my_array, axis=0)
-pr = numpy.prod(my_array, axis=None)
-
-print(pr)
+print(f'The product of the arrays is: {product}\n')
