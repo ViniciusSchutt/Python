@@ -1,4 +1,4 @@
-# simple code to give the triple ou any number informed
+# simple code to give the triple of any number informed
 
 n = float(input("Inform a number: "))
 while n != -10000: # -10000 is a random example
