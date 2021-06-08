@@ -3,7 +3,7 @@ tot = 0
 soma_Impar = cont = 0
 soma_Par = 0 
 
-for c in range(0,10):
+for c in range(0, 10):
     numero = int(input("Digite um número: "))
 
     if numero % 2 != 0:
@@ -13,7 +13,7 @@ for c in range(0,10):
         cont += 1
         soma_Par += numero
 
-    for d in range(1,numero + 1):
+    for d in range(1, numero + 1):
         if numero % d == 0:
             soma += 1
 
