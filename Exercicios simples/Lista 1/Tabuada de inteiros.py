@@ -1,5 +1,7 @@
-numero=int(input('Informe um número inteiro para fazer a tabuada: '))
-print('{}*{}={}'.format(numero,1,numero*1))
+# O programa calcula e imprime a tabuada de números inteiros
+
+numero = int(input('Informe um número inteiro para fazer a tabuada: '))
+print('{}*{}={}'.format(numero, 1, numero*1))
 print('{}*{}={}'.format(numero, 2, numero*2))
 print('{}*{}={}'.format(numero, 3, numero*3))
 print('{}*{}={}'.format(numero, 4, numero*4))
