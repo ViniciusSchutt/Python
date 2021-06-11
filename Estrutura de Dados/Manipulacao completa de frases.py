@@ -42,7 +42,7 @@ def funcoesSimples():
          elif nome[i] == 'b' or nome[i] == 'c' or nome[i] == 'd' or nome[i] == 'f':
              letra = nome[i]
              if letra in alphabet:
-                 pos = alphabet.index(letra) #pos se refere ao índice da letra no alfabeto
+                 pos = alphabet.index(letra)  #pos se refere ao índice da letra no alfabeto
                  frasecifrada.append(alphabet[pos - 6 + 26])
          else:
              letra = nome[i]

@@ -1,5 +1,5 @@
 # Escreva um programa que prencha uma lista com os nomes de 5 vendedores,
-# preencha tbm uma outra lista com total vendido po cada vendedor.
+# preencha tbm uma outra lista com total vendido por cada vendedor.
 # Cada vendedor recebe 15% de comissão sobre as vendas. Faça os seguintes
 # cálculos e mostre os resultados na tela: (2 pontos)
 # a. uma listagem com o nome e o valor de comissão de cada vendedor (vendas * 0,15) (2 pontos)
