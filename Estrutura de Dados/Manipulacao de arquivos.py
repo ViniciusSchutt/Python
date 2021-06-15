@@ -1,6 +1,7 @@
-#Primeiro exemplo de manipulação de arquivos
+# Primeiro exemplo de manipulação de arquivos
 
 vetor=['Linha01\n', 'Linha02\n', 'Linha03\n']
+
 
 def criaarquivo():
     arquivo = open('C:\\Users\\vinic\\AppData\\Local\\Temp\\arqTeste.txt', 'w')
