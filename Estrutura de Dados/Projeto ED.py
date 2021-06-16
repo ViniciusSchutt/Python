@@ -246,25 +246,29 @@ def infoPontual(ano):
 def infoIsolada(info):
     if info == 'E':
         print(dataFrame.loc[0:59, 'Expectativa de vida1':'br vs eua (x)'])
-        info = str.upper(input("Info: \n'E' p/ expect. vida; 'F' p/ fert; 'R' p/ renda; 'T' p/ tudo;\n"
-                               "'C' p/ curiosidades; 'OK' p/ prosseguir; 'G' p/ gráficos; 'S' p/ sair.\n"))
+        info = infoIsolada(str.upper(input(
+                               "Info: \n'E' p/ expect. vida; 'F' p/ fert; 'R' p/ renda; 'T' p/ tudo;\n"
+                               "'C' p/ curiosidades; 'OK' p/ prosseguir; 'G' p/ gráficos; 'S' p/ sair.\n")))
 
     if info == 'F':
         print(dataFrame.loc[0:59, 'Taxa de fertilidade1':'br vs eua (f)'])
-        info = str.upper(input("Info: \n'E' p/ expect. vida; 'F' p/ fert; 'R' p/ renda; 'T' p/ tudo;\n"
-                               "'C' p/ curiosidades; 'OK' p/ prosseguir; 'G' p/ gráficos; 'S' p/ sair.\n"))
+        info = infoIsolada(str.upper(input(
+                               "Info: \n'E' p/ expect. vida; 'F' p/ fert; 'R' p/ renda; 'T' p/ tudo;\n"
+                               "'C' p/ curiosidades; 'OK' p/ prosseguir; 'G' p/ gráficos; 'S' p/ sair.\n")))
 
     if info == 'R':
         print(dataFrame.loc[0:49, 'Renda1':'br vs eua (rl)'])
-        info = str.upper(input("Info: \n'E' p/ expect. vida; 'F' p/ fert; 'R' p/ renda; 'T' p/ tudo;\n"
-                               "'C' p/ curiosidades; 'OK' p/ prosseguir; 'G' p/ gráficos; 'S' p/ sair.\n"))
+        info = infoIsolada(str.upper(input(
+                               "Info: \n'E' p/ expect. vida; 'F' p/ fert; 'R' p/ renda; 'T' p/ tudo;\n"
+                               "'C' p/ curiosidades; 'OK' p/ prosseguir; 'G' p/ gráficos; 'S' p/ sair.\n")))
 
     if info == 'T':
         print(dataFrame.loc[0:59, 'Expectativa de vida1':'br vs eua (x)'])
         print(dataFrame.loc[0:59, 'Taxa de fertilidade1':'br vs eua (f)'])
         print(dataFrame.loc[0:49, 'Renda1':'br vs eua (rl)'])
-        info = str.upper(input("Info: \n'E' p/ expect. vida; 'F' p/ fert; 'R' p/ renda; 'T' p/ tudo;\n"
-                               "'C' p/ curiosidades; 'OK' p/ prosseguir; 'G' p/ gráficos; 'S' p/ sair.\n"))
+        info = infoIsolada(str.upper(input(
+                               "Info: \n'E' p/ expect. vida; 'F' p/ fert; 'R' p/ renda; 'T' p/ tudo;\n"
+                               "'C' p/ curiosidades; 'OK' p/ prosseguir; 'G' p/ gráficos; 'S' p/ sair.\n")))
 
     if info == 'C':
         print(dataFrame.loc[0:27, 'Curiosidades':'br vs eua'])
@@ -281,8 +285,9 @@ def infoIsolada(info):
         print("Renda nacional líquida per capita média nos Estados Unidos:")
         print(dataFrame["euaR"].mean())
 
-        info = str.upper(input("Info: \n'E' p/ expect. vida; 'F' p/ fert; 'R' p/ renda; 'T' p/ tudo;\n"
-                               "'C' p/ curiosidades; 'OK' p/ prosseguir; 'G' p/ gráficos; 'S' p/ sair.\n"))
+        info = infoIsolada(str.upper(input(
+                               "Info: \n'E' p/ expect. vida; 'F' p/ fert; 'R' p/ renda; 'T' p/ tudo;\n"
+                               "'C' p/ curiosidades; 'OK' p/ prosseguir; 'G' p/ gráficos; 'S' p/ sair.\n")))
 
     if info == 'G':
         dados = graficos((int(input("Você pode visualizar os gráficos usando as seguintes opções: \n"  # chama f grafs
@@ -290,8 +295,9 @@ def infoIsolada(info):
                                     "2 para Taxa de Fertilidade;\n"
                                     "3 para Renda Nacional Líquida per capita.\n"
                                     "0 para sair.\n"))))
-        info = str.upper(input("Info: \n'E' p/ expect. vida; 'F' p/ fert; 'R' p/ renda; 'T' p/ tudo;\n"
-                               "'C' p/ curiosidades; 'OK' p/ prosseguir; 'G' p/ gráficos; 'S' p/ sair.\n"))
+        info = infoIsolada(str.upper(input(
+                               "Info: \n'E' p/ expect. vida; 'F' p/ fert; 'R' p/ renda; 'T' p/ tudo;\n"
+                               "'C' p/ curiosidades; 'OK' p/ prosseguir; 'G' p/ gráficos; 'S' p/ sair.\n")))
 
     if info == 'OK':
         ano = infoPontual(int(input("Ditite um ano: \n")))
@@ -302,8 +308,9 @@ def infoIsolada(info):
 
     else:
         print("Entrada inválida, por favor, tente:\n")
-        info = str.upper(input("'E' p/ expect. vida; 'F' p/ fert; 'R' p/ renda; 'T' p/ tudo;\n"
-                               "'C' p/ curiosidades; 'OK' p/ prosseguir; 'G' p/ gráficos; 'S' p/ sair.\n"))
+        info = infoIsolada(str.upper(input(
+                               "'E' p/ expect. vida; 'F' p/ fert; 'R' p/ renda; 'T' p/ tudo;\n"
+                               "'C' p/ curiosidades; 'OK' p/ prosseguir; 'G' p/ gráficos; 'S' p/ sair.\n")))
 
 
 pergunta = int(input("Esse programa compara informações sobre população brasileira e americana. Digite:\n"
