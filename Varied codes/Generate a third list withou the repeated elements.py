@@ -1,5 +1,5 @@
-#6)Faça um programa que percorra duas listas e gere uma terceira lista sem os elementos
-#repetidos. Mostrar na tela as 3 listas.
+# Faça um programa que percorra duas listas e gere uma terceira lista sem os elementos
+# repetidos. Mostrar na tela as 3 listas.
 
 listaA = []
 listaB = []
@@ -23,13 +23,15 @@ while x > 0:
     else:
         x = 0
 
+
 def remove_repetidos(listaC):
-    l=[]
+    l = []
     for i in listaC:
         if i not in l:
             l.append(i)
     l.sort()
     return l
+
 
 listaC = remove_repetidos(listaC)
 print(listaA)
