@@ -1,10 +1,10 @@
 # Faça um programa que preencha uma matriz de ordem 3 x 5 de elementos inteiros.
 # Crie uma função que receba essa matriz por parâmetro e faça os seguintes cálculos:
-# a) o maior elemento da matriz;
-# b) a média dos elementos da matriz;
-# c) altere os números da matriz, multiplicando cada elemento pelo maior número;
-# d) a média e o maior número devem ser impressos dentro da função;
-# e) No programa principal imprima a nova matriz, após a finalização da execução da função.
+# a) o maior elemento da matriz
+# b) a média dos elementos da matriz
+# c) altere os números da matriz, multiplicando cada elemento pelo maior número
+# d) a média e o maior número devem ser impressos dentro da função
+# e) No programa principal imprima a nova matriz, após a finalização da execução da função
 
 from random import randint
 
@@ -24,7 +24,7 @@ while x < 3:
     while y < 5:
         b = randint(0, 100)
         matB.append(b)
-        y = y+1
+        y += 1
     
         matC.append(a+b)
         maior = max(matC)  # a
@@ -41,7 +41,3 @@ print(f"O maior número da matriz é: {maior}")
 
 print(f"Matriz original: {matC}")
 print(f"Matriz final: {altC}")  # e
-
-
-
-
